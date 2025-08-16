@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A.R. Viswanathan Consulting</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky top-0 z-50 bg-white shadow">
+    <div class="max-w-5xl mx-auto flex justify-between items-center px-4 py-3">
+      <span class="font-bold text-lg">A.R. Viswanathan Consulting</span>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#expertise" class="hover:text-blue-600">Expertise</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero/About Me -->
+  <section id="about" class="max-w-5xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-8">
+    <img src="https://via.placeholder.com/180x180.png?text=Photo" alt="Professional" class="rounded-full w-44 h-44 object-cover shadow-md" />
+    <div>
+      <h1 class="text-3xl font-bold mb-4">Adayapalam Ramakrishnan Viswanathan</h1>
+      <p class="mb-4">
+        With over 40 years of experience in procurement, sourcing, and expert conflict management, Mr. Adayapalam Ramakrishnan Viswanathan is committed to helping businesses optimize their supply chain, resolve project conflicts, and add measurable value.
+      </p>
+      <!-- Optional: Embedded video -->
+      <!--
+      <div class="mt-4">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Welcome Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- Expertise & Highlights -->
+  <section id="expertise" class="bg-white py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Expertise & Highlights</h2>
+      <div class="mb-6">
+        <h3 class="font-semibold text-lg">Conflict Management</h3>
+        <p>
+          Mr. Viswanathan skillfully mediates and resolves conflicts that stall construction or commercial projects due to disputes over roles or terms. Acting as a trusted external advisor, he works collaboratively with all parties to reshape agreements and job descriptions.
+          <br />
+          <span class="italic">Notable achievement:</span> Successfully unblocked residential projects through joint venture facilitation within 6–9 months.
+        </p>
+      </div>
+      <div class="mb-6">
+        <h3 class="font-semibold text-lg">Procurement & Sourcing</h3>
+        <p>
+          Bringing strategic procurement expertise, Mr. Viswanathan manages complex sourcing requirements, including hazardous and critical materials, ensuring compliance with global safety and trade standards. His leadership spans multi-million-dollar projects and extensive international vendor networks.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">Professional Highlights</h3>
+        <ul class="list-disc ml-6">
+          <li>Led procurement and supply chain for a landmark $300M international construction project.</li>
+          <li>Pioneered safe import and handling of hazardous cargo like Propylene and Ethylene Oxide in India.</li>
+          <li>Achieved major cost savings through strategic vendor negotiations and logistics optimization.</li>
+          <li>Managed crises such as water shortages, strikes, and pandemics to keep projects on track.</li>
+          <li>Developed over 350 compliant international vendors adhering to INCOTERMS and global regulations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulting Services -->
+  <section id="services" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Consulting Services</h2>
+      <div class="mb-4">
+        <h3 class="font-semibold">Sourcing and Procurement</h3>
+        <p>
+          Strategic planning, vendor management, cost control, and supply chain optimization designed to improve reliability and reduce expenses. Specialized sourcing for hazardous materials with strict adherence to compliance and regulatory standards.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h3 class="font-semibold">Conflict Management</h3>
+        <p>
+          Tailored mediation and resolution services for projects blocked by stakeholder disagreements. Facilitating negotiations, reshaping agreements, and clearing obstacles to resume progress — including resolving stalled residential projects by creating working joint ventures.
+        </p>
+      </div>
+      <div class="mt-6">
+        <span class="inline-block bg-blue-600 text-white px-6 py-3 rounded shadow font-semibold">
+          Get in touch today to discuss how Mr. Viswanathan’s expertise can add value to your business.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Schedule Call -->
+  <section id="contact" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Contact & Schedule Call</h2>
+      <div class="mb-4">
+        <p>Email: <span class="font-mono">[Insert Email]</span></p>
+        <p>Phone / WhatsApp: <span class="font-mono">[Insert Number]</span></p>
+      </div>
+      <!-- Optional: Calendly embed -->
+      <!--
+      <div class="mb-6">
+        <iframe src="https://calendly.com/your-calendly-link" width="320" height="400" frameborder="0"></iframe>
+      </div>
+      -->
+      <form id="contactForm" class="bg-white rounded shadow p-6 max-w-md">
+        <label class="block mb-2 font-semibold" for="name">Name</label>
+        <input class="w-full mb-4 px-3 py-2 border rounded" type="text" id="name" name="name" placeholder="Your Name" required />
+        <label class="block mb-2 font-semibold" for="email">Email</label>
+        <input class="w-full mb-4 px-3 py-2 border rounded" type="email" id="email" name="email" placeholder="you@email.com" required />
+        <label class="block mb-2 font-semibold" for="message">Message</label>
+        <textarea class="w-full mb-4 px-3 py-2 border rounded" id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded font-semibold">Send</button>
+      </form>
+      <div id="formStatus" class="mt-4 text-sm"></div>
+    </div>
+  </section>
+
+  <!-- Smooth scroll for anchor links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // AJAX Contact Form Submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const statusDiv = document.getElementById('formStatus');
+
+      fetch('https://your-backend.com/api/contact', { // <-- Replace with your backend endpoint
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      })
+      .then(response => {
+        if (response.ok) {
+          statusDiv.textContent = 'Thank you for contacting us!';
+          statusDiv.className = 'mt-4 text-green-600 text-sm';
+          document.getElementById('contactForm').reset();
+        } else {
+          statusDiv.textContent = 'There was a problem submitting your message.';
+          statusDiv.className = 'mt-4 text-red-600 text-sm';
+        }
+      })
+      .catch(error => {
+        statusDiv.textContent = 'Network error. Please try again later.';
+        statusDiv.className = 'mt-4 text-red-600 text-sm';
+      });
+    });
+  </script>
+</body>
+</html>
