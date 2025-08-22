@@ -24,7 +24,7 @@
 
   <!-- Hero/About Me -->
   <section id="about" class="max-w-5xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-8">
-    <img src="https://via.placeholder.com/180x180.png?text=Photo" alt="Professional" class="rounded-full w-44 h-44 object-cover shadow-md" />
+    <div style="font-size: 100px; text-align: center;">🌟</div>
     <div>
       <h1 class="text-3xl font-bold mb-4">Adayapalam Ramakrishnan Viswanathan</h1>
       <p class="mb-4">
@@ -102,22 +102,10 @@
         <p>Email: <span class="font-mono">[Insert Email]</span></p>
         <p>Phone / WhatsApp: <span class="font-mono">[Insert Number]</span></p>
       </div>
-      <!-- Optional: Calendly embed -->
-      <!--
-      <div class="mb-6">
-        <iframe src="https://calendly.com/your-calendly-link" width="320" height="400" frameborder="0"></iframe>
+      <!-- Google Form Embed -->
+      <div class="bg-white rounded shadow p-6 max-w-md">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGVbMM_l-bsT2G2E41Q6vC9UJqQp-yjCiSt5aYnWHN9_IO7w/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
-      -->
-      <form id="contactForm" class="bg-white rounded shadow p-6 max-w-md">
-        <label class="block mb-2 font-semibold" for="name">Name</label>
-        <input class="w-full mb-4 px-3 py-2 border rounded" type="text" id="name" name="name" placeholder="Your Name" required />
-        <label class="block mb-2 font-semibold" for="email">Email</label>
-        <input class="w-full mb-4 px-3 py-2 border rounded" type="email" id="email" name="email" placeholder="you@email.com" required />
-        <label class="block mb-2 font-semibold" for="message">Message</label>
-        <textarea class="w-full mb-4 px-3 py-2 border rounded" id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded font-semibold">Send</button>
-      </form>
-      <div id="formStatus" class="mt-4 text-sm"></div>
     </div>
   </section>
 
@@ -130,35 +118,6 @@
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth' });
         }
-      });
-    });
-
-    // AJAX Contact Form Submission
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const statusDiv = document.getElementById('formStatus');
-
-      fetch('https://your-backend.com/api/contact', { // <-- Replace with your backend endpoint
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message })
-      })
-      .then(response => {
-        if (response.ok) {
-          statusDiv.textContent = 'Thank you for contacting us!';
-          statusDiv.className = 'mt-4 text-green-600 text-sm';
-          document.getElementById('contactForm').reset();
-        } else {
-          statusDiv.textContent = 'There was a problem submitting your message.';
-          statusDiv.className = 'mt-4 text-red-600 text-sm';
-        }
-      })
-      .catch(error => {
-        statusDiv.textContent = 'Network error. Please try again later.';
-        statusDiv.className = 'mt-4 text-red-600 text-sm';
       });
     });
   </script>
